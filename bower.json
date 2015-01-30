@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-material-design-sass",
+  "version": "0.0.0",
+  "homepage": "https://github.com/oliamb/bootstrap-material-design-sass",
+  "authors": [
+    "Olivier Amblet <olivier@amblet.net>"
+  ],
+  "description": "A Sass implementation of material design on bootstrap.",
+  "main": "scss/material-design.scss",
+  "keywords": [
+    "sass",
+    "material-design",
+    "bootstrap",
+    "css",
+    "scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.3",
+    "material-design-iconic-font": "~1.1.1"
+  }
+}

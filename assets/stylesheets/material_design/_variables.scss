@@ -1,0 +1,76 @@
+// ----------------------------
+// Colors
+// ------
+
+// Colors are loaded from color_base and color_data.
+// Variables are defined for all the specified predefined colors.
+//
+// Before importing this file, $primary-color-name and
+// $accent-color-name should be overriden to chosen colors.
+
+$primary-color-name: "indigo" !default;
+$accent-color-name: "pink" !default;
+
+@import 'material_design/color_base';
+@import 'material_design/color_data';
+
+$primary-color: $primary-color-500;
+$primary-text-color: $primary-text-color-500;
+$primary-color-light: $primary-color-200;
+$primary-text-color-light: $primary-text-color-200;
+$primary-color-lighter: $primary-color-50;
+$primary-text-color-lighter: $primary-text-color-50;
+$primary-color-dark: $primary-color-700;
+$primary-text-color-dark: $primary-text-color-700;
+$primary-color-darker: $primary-color-900;
+$primary-text-color-darker: $primary-text-color-900;
+
+$accent-color: $accent-color-A400;
+$accent-text-color: $accent-text-color-A400;
+$accent-color-light: $accent-color-A200;
+$accent-text-color-light: $accent-text-color-A200;
+$accent-color-lighter: $accent-color-A100;
+$accent-text-color-lighter: $accent-text-color-A100;
+$accent-color-dark: $accent-color-A700;
+$accent-text-color-dark: $accent-text-color-A700;
+
+// ----------------------------
+// Typography and Links
+// --------------------
+
+// Fonts are not loaded for now.
+$font-family-base: Roboto, Noto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// We use the mobile font size by default
+// On Desktop it should be 13sp instead.
+$font-size-base: 14px;
+$line-height-base: 20/14;
+$font-color: rgba(0, 0, 0, 0.87);
+
+$link-color: $accent-color;
+
+// ----------------------------
+// Navbar variables
+// ----------------
+
+// Default height is 56dp
+$navbar-height: 64px;
+
+// We use the primary color scheme as background for the default navbar
+$navbar-default-bg: $primary-color;
+$navbar-default-color: $primary-text-color;
+
+// Links from the navbar use the same color as standard text
+// and take the accent color once overed.
+$navbar-default-link-color: $primary-text-color;
+$navbar-default-link-hover-color: $accent-color;
+$navbar-default-link-active-bg: $accent-color;
+$navbar-default-link-active-color: $accent-text-color;
+
+// The brand stays neutral
+$navbar-default-brand-color: $primary-text-color;
+$navbar-default-brand-hover-color: $primary-text-color;
+
+
+// Material Design navbar have no rounder border
+$navbar-border-radius: 0;
