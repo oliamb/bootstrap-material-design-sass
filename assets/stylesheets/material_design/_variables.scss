@@ -50,9 +50,12 @@ $font-color: rgba(0, 0, 0, 0.87);
 $link-color: $accent-color;
 
 // ----------------------------
-// Default Box Shadow
-// ------------------
+// Default Borders and Shadow
+// --------------------------
 
+$border-radius-base: 2px;
+
+// This is a custom variable
 $default-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 
 
@@ -82,3 +85,7 @@ $navbar-default-brand-hover-color: $primary-text-color;
 
 // Material Design navbar have no rounder border
 $navbar-border-radius: 0;
+
+$navbar-default-toggle-hover-bg: transparent;
+$navbar-default-toggle-bg: transparent;
+$navbar-default-toggle-border-color: transparent;

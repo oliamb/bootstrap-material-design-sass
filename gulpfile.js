@@ -6,6 +6,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 var _ = require('lodash');
 var fs = require('fs');
+var mainBowerFiles = require('main-bower-files');
 
 gulp.task('sass', function () {
   gulp.src('doc/assets/stylesheets/*.scss')
@@ -20,6 +21,11 @@ gulp.task('sass', function () {
   }))
   .pipe(sourcemaps.write('maps'))
   .pipe(gulp.dest('./doc/assets/css'));
+});
+
+gulp.task('copyFonts', function() {
+  return gulp.src(mainBowerFiles({filter: /.*\.(woff2?|eot|svg|ttf)/}))
+  .pipe(gulp.dest('doc/assets/fonts'));
 });
 
 gulp.task('default', function() {

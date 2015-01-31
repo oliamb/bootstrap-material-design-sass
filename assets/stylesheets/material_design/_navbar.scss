@@ -14,3 +14,9 @@
 .navbar-raised {
   box-shadow: $default-box-shadow;
 }
+
+// Remove border
+.navbar-toggle {
+  border: none;
+  color: $primary-text-color;
+}
