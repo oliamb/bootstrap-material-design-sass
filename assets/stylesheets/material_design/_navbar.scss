@@ -8,3 +8,9 @@
   // No border
   border: none;
 }
+
+// Display the navbar as raised
+// above next content.
+.navbar-raised {
+  box-shadow: $default-box-shadow;
+}

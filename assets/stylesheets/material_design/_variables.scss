@@ -50,11 +50,19 @@ $font-color: rgba(0, 0, 0, 0.87);
 $link-color: $accent-color;
 
 // ----------------------------
+// Default Box Shadow
+// ------------------
+
+$default-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+
+
+// ----------------------------
 // Navbar variables
 // ----------------
 
 // Default height is 56dp
 $navbar-height: 64px;
+$font-size-large: 24px;
 
 // We use the primary color scheme as background for the default navbar
 $navbar-default-bg: $primary-color;
